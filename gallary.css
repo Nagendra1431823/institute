@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	color: rgb(21, 21, 100);
+	font-weight: 500;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #FDC93B;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: rgb(21, 21, 100);;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+.img img {
+    border: 2px;
+    margin-top: 200px;
+    border-radius: 40px;
+}
+/*------------- Navigation style end ------------*/
+
+ /* feature section styles */
+  
+ #features {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  }
+  #features .f-box {
+	width: 180px;
+	text-align: center;
+	padding: 25px 15px;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+	border: 1px solid #cce7d0;
+	border-radius: 4px;
+	margin: 15px 0;
+	transition: box-shadow 0.3s;
+  }
+  #features .f-box:hover {
+	box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+  }
+  #features .f-box img {
+	width: 100%;
+	margin-bottom: 10px;
+  }
+  #features .f-box h6 {
+	display: inline-block;
+	padding: 9px 8px 6px 8px;
+	line-height: 1;
+	font-size: 14px;
+	border-radius: 4px;
+	color: #088178;
+	background-color: #fddde4;
+  }
+  #features .f-box:nth-child(2) h6 {
+	background-color: #cdebbc;
+  }
+  #features .f-box:nth-child(3) h6 {
+	background-color: #d1e8f2;
+  }
+  #features .f-box:nth-child(4) h6 {
+	background-color: #cdd4f8;
+  }
+  #features .f-box:nth-child(5) h6 {
+	background-color: #f6dbf6;
+  }
+  #features .f-box:nth-child(6) h6 {
+	background-color: #fff2e5;
+  }
+  /* feature section styles */
+  
+  .product-section .pro-collection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 60px;
+  }
+  .product-section h1,
+  .product-section p {
+	text-align: center;
+  }
+  .product-section .product-cart {
+	width: 280px;
+	border: 1px solid #ebebeb;
+	padding: 13px;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	position: relative;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+	transition: box-shadow 0.2s;
+  }
+  .product-section .product-cart:hover {
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+  .product-section .product-cart img {
+	width: 100%;
+	border-radius: 25px;
+  }
+  .product-section .product-cart span {
+	color: #969696;
+	font-weight: 500;
+	line-height: 30px;
+  }
+  .product-section .product-cart h4 {
+	font-size: 18px;
+	color: rgb(41, 41, 41);
+  }
+        
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 8vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
